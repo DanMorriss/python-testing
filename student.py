@@ -11,7 +11,10 @@ class Student:
         self.naughty_list = False
 
 
-    @property # as its a method to get data only we add this decorator
+    @property # as its a method to get data only, we add this decorator
     def full_name(self):
         return f"{self._first_name} {self._last_name}"
     
+    
+    def alert_santa(self):
+        self.naughty_list = True
